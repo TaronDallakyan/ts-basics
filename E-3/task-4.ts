@@ -7,13 +7,13 @@ enum Role {
 function welcome(role: Role): string {
   switch (role) {
     case Role.Admin:
-      return "Welcome, Admin! You have full access.";
+      return `Welcome, ${Role.Admin}! You have full access.`;
 
     case Role.User:
-      return "Welcome, User! You have limited access.";
+      return `Welcome, ${Role.User}! You have full access.`;
 
     case Role.Guest:
-      return "Welcome, Guest! Please sign up to gain access.";
+      return `Welcome, ${Role.Guest}! You have full access.`;
   }
 }
 
